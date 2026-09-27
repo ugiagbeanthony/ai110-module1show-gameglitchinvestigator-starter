@@ -32,12 +32,11 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
-
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Start the app and choose a difficulty. The game starts with 50 points.
+2. Enter a number and press **Submit Guess**. The first submission is a trial attempt that gives a higher or lower hint and sets a bound without using a real attempt.
+3. Make real guesses starting with Attempt 1. The hint tells you whether to guess higher or lower, and the score can increase or decrease based on the attempt and feedback.
+4. Watch the current score and attempts shown in the game. The score updates after each real guess, and the trial attempt does not count toward the attempt limit.
+5. Win by guessing the secret number. You lose if you run out of attempts or if your score goes below 0, and the final score shows the score at the moment the game ends.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -47,8 +46,18 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
+================ test session starts =================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /mnt/c/Users/bbydr/ai110-module1show-gameglitchinvestigator-starter
+collected 11 items                                   
+
+tests/test_game_logic.py ...........           [100%]
+
+================= 11 passed in 0.41s =================
 ```
 
 ## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]
+- [x] Challenge 4: Enhanced UI
+
+I improved the interface with a difficulty selector, a sidebar showing the number range and attempt limit, a trial hint, attempt information, score display, guess history in the developer panel, and clear success or game-over messages. The **New Game** button also resets the visible game state so the player can start again.
