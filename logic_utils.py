@@ -3,8 +3,9 @@ import random
 # FIX: I asked AI to help isolate the comparison logic, then checked the result against the hint rules. I kept the change so the app uses consistent secret types.
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
+    # UPDATE: I asked AI to change Easy to 1-50 and Hard to 1-150. I checked the mapping and tested both ranges against what I wanted in the game.
     ranges = {
-        "Easy": (1, 20),
+        "Easy": (1, 50),
         "Normal": (1, 100),
         "Hard": (1, 150),
     }

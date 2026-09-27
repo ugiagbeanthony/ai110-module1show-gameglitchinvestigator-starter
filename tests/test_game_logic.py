@@ -19,8 +19,13 @@ def test_guess_too_low():
     assert result == "Too Low"
 
 
+# I asked AI to add tests for the new difficulty ranges so I could verify the updates instead of only checking the sidebar manually.
 def test_hard_difficulty_uses_range_to_150():
     assert get_range_for_difficulty("Hard") == (1, 150)
+
+
+def test_easy_difficulty_uses_range_to_50():
+    assert get_range_for_difficulty("Easy") == (1, 50)
 
 
 def test_parse_guess_accepts_numeric_string():
