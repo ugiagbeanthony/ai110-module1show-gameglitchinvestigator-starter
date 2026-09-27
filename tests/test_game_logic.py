@@ -1,4 +1,4 @@
-from logic_utils import check_guess, parse_guess, update_score
+from logic_utils import check_guess, get_range_for_difficulty, parse_guess, update_score
 
 
 def test_winning_guess():
@@ -17,6 +17,10 @@ def test_guess_too_low():
     # If secret is 50 and guess is 40, hint should be "Too Low"
     result = check_guess(40, 50)
     assert result == "Too Low"
+
+
+def test_hard_difficulty_uses_range_to_150():
+    assert get_range_for_difficulty("Hard") == (1, 150)
 
 
 def test_parse_guess_accepts_numeric_string():

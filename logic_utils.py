@@ -6,7 +6,7 @@ def get_range_for_difficulty(difficulty: str):
     ranges = {
         "Easy": (1, 20),
         "Normal": (1, 100),
-        "Hard": (1, 50),
+        "Hard": (1, 150),
     }
     return ranges.get(difficulty, (1, 100))
 
