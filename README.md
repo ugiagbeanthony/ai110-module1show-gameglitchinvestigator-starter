@@ -25,9 +25,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+- [x] Detail which bugs you found.
+- [x] Explain what fixes you applied.
+
+The purpose of the game is to guess a hidden number using hints while managing a changing score. I found that the secret value and hint comparisons were inconsistent, the attempt counter lagged behind the guesses, the trial hint disappeared after reruns, and the score did not always match the final result. I fixed these problems with Streamlit session state, consistent numeric comparisons, a separate trial round, one-based real attempts, and score updates that stop when the game ends.
 
 ## 📸 Demo Walkthrough
 
