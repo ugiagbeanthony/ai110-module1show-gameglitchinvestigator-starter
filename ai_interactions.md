@@ -28,6 +28,7 @@ i had to check the win and loss it added the 10 point bonus on a win and subtrac
 ## Test Generation (SF7)
 
 > Document how you used AI to help generate or improve tests.
+
 i asked ai to add test after each refactor then i checked the test then ran it till it was 100%
 | Edge Case | Prompt Used | AI-Suggested Test | Did It Pass? | Your Reasoning |
 |-----------|-------------|-------------------|--------------|----------------|
