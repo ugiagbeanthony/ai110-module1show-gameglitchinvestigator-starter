@@ -62,4 +62,4 @@ tests/test_game_logic.py ...........           [100%]
 
 - [x] Challenge 4: Enhanced UI
 
-I improved the interface with a difficulty selector, a sidebar showing the number range and attempt limit, a trial hint, attempt information, score display, guess history in the developer panel, and clear success or game-over messages. The **New Game** button also resets the visible game state so the player can start again.
+I improved the interface by making changes to difficulty selector, a sidebar showing the number range and attempt limit, a trial hint, attempt information, score display, guess history in the developer panel, and clear success or game-over messages. The **New Game** button also resets the visible game state so the player can start again.
